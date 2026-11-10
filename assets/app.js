@@ -45,6 +45,11 @@
   if (!SESSIONS.find(s => s.id === current)) { const n = nextDuty(); current = n ? n.id : (me ? people[me][0].id : SESSIONS[0].id); }
 
   const ext = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12"/></svg>';
+  const play = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5 3.2v9.6L13 8z" fill="currentColor"/></svg>';
+  // Thumbnail file name: the post or video id from the reference link.
+  // References with no public preview image (checked 10 Nov 2026).
+  const NO_THUMB = new Set(['DeNHKvtIMlE']);
+  const refId = u => u.replace(/\/+$/, '').split('/').pop();
   const kindCls = k => k === 'Outside' ? 'outside' : k === 'BTS' ? 'bts' : 'inside';
   function myRoles(s) { const out = []; s.teams.forEach(t => t.roles.forEach(r => { if (me && split(r.people).includes(me)) out.push({ team: t.team, role: r.role }); })); return out; }
   const onVideo = () => !me || teamsOf[me].has('Video');
@@ -104,9 +109,12 @@
     const posts = s.pieces.filter(p => p.kind !== 'BTS').length;
     const cards = s.pieces.map((p, i) => {
       const yours = roles.some(r => roleMatches(r, p.kind));
-      const refs = p.idea ? '<span class="idea">Idea · no reference</span>' : p.refs.map((u, j) => `<a class="ref" href="${u}" target="_blank" rel="noopener">Watch ref ${j + 1}${u.includes('youtu') ? ' (YouTube)' : ''} ${ext}</a>`).join('');
+      const refs = p.idea ? '<span class="idea">Idea · no reference</span>' : p.refs.map((u, j) => {
+        const yt = u.includes('youtu');
+        return `<a class="ref" href="${u}" target="_blank" rel="noopener" style="--j:${j}"><span class="ref-img${NO_THUMB.has(refId(u)) ? ' noimg' : ''}">${NO_THUMB.has(refId(u)) ? '' : `<img src="assets/refs/${refId(u)}.webp" alt="" loading="lazy" decoding="async" onerror="this.parentNode.classList.add('noimg');this.remove()">`}<span class="play">${play}</span><span class="src">${yt ? 'YouTube' : 'Instagram'}</span></span><span class="ref-label">Watch ref ${j + 1}${yt ? ' (YouTube)' : ''} ${ext}</span></a>`;
+      }).join('');
       const cap = (capt && p.kind !== 'BTS') ? `<div class="cap"><b>Caption</b> ${mark(capt)}</div>` : '';
-      const body = `<div class="d">${p.desc}</div>${p.tip ? `<div class="tip"><b>Tip</b>${p.tip}</div>` : ''}<div class="refs">${refs}</div>`;
+      const body = `<div class="d">${p.desc}</div>${p.tip ? `<div class="tip"><b>Tip</b>${p.tip}</div>` : ''}<div class="refs${p.idea ? ' is-idea' : ''}">${refs}</div>`;
       const head = `<div class="pc-top"><span class="num">${pad(i + 1)}</span><span class="k ${kindCls(p.kind)}">${p.kind}</span>${yours ? '<span class="yt">● Your team</span>' : ''}</div>`;
       if (full) return `<article class="pc${yours ? ' yours' : ''}" style="--i:${i}">${head}<h3>${p.title}</h3>${body}${cap}</article>`;
       return `<details class="pc" style="--i:${i}"><summary>${head}<h3>${p.title}</h3></summary>${body}</details>${cap ? `<div class="capx">${cap}</div>` : ''}`;
