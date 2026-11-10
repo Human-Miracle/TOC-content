@@ -62,7 +62,10 @@ export default async function Home() {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img className="logo" src="/logo.png" width={1324} height={378} alt="" loading="lazy" />
           <p>{[event.name, event.theme, event.org].filter(Boolean).join(' · ')}</p>
-          <a className="totop" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+          <div className="foot-links">
+            <a className="admin-link" href="/admin">Team sign in</a>
+            <a className="totop" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+          </div>
         </div>
       </footer>
     </>
