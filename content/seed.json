@@ -1,0 +1,1494 @@
+{
+  "event": {
+    "slug": "toc26",
+    "shortName": "TOC'26",
+    "name": "The Outpouring Camp '26",
+    "title": "Content Plan",
+    "dates": "Nov 5–8, 2026",
+    "place": "Jos",
+    "theme": "Regnum: The Supply of the Spirit",
+    "org": "Gloryzone Global",
+    "rulesLabel": "Video team",
+    "rules": "music comes from Nate's approved playlist only, and every edit carries the Gloryzone / TOC'26 look. Teams split their pieces among themselves."
+  },
+  "teams": [
+    "Video",
+    "Social media",
+    "Writers"
+  ],
+  "dayEnds": {
+    "Thursday": "2026-11-05T23:00:00+01:00",
+    "Friday": "2026-11-06T23:00:00+01:00",
+    "Saturday": "2026-11-07T23:00:00+01:00",
+    "Sunday": "2026-11-08T16:00:00+01:00"
+  },
+  "sessions": [
+    {
+      "id": "thu-eve",
+      "name": "Thursday evening",
+      "short": "Thu eve",
+      "time": "4PM · Opening night",
+      "day": "Thursday",
+      "start": "2026-11-05T16:00:00+01:00",
+      "end": "2026-11-05T20:30:00+01:00",
+      "note": null,
+      "countsPosts": true,
+      "teams": [
+        {
+          "team": "Video",
+          "roles": [
+            {
+              "role": "Inside shooting",
+              "short": "Shooting",
+              "kind": "Inside",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Simon Arome",
+                "Demola",
+                "Great"
+              ]
+            },
+            {
+              "role": "Inside editing",
+              "short": "Editing",
+              "kind": "Inside",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Marvy",
+                "Nate"
+              ]
+            },
+            {
+              "role": "Outside",
+              "short": null,
+              "kind": "Outside",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Kelvin",
+                "Nenrot",
+                "Emmah"
+              ]
+            },
+            {
+              "role": "BTS",
+              "short": null,
+              "kind": "BTS",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Felicia"
+              ]
+            },
+            {
+              "role": "CD / comms",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Isaac",
+                "Promise"
+              ]
+            },
+            {
+              "role": "Inventory",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Awaji",
+                "Dorcas"
+              ]
+            }
+          ]
+        },
+        {
+          "team": "Social media",
+          "roles": [
+            {
+              "role": "Stories",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Nanriee"
+              ]
+            },
+            {
+              "role": "Picture posts",
+              "short": null,
+              "kind": null,
+              "daily": true,
+              "caption": false,
+              "people": [
+                "Keturah"
+              ]
+            },
+            {
+              "role": "Video posts",
+              "short": null,
+              "kind": null,
+              "daily": true,
+              "caption": false,
+              "people": [
+                "Nidi"
+              ]
+            },
+            {
+              "role": "Comments",
+              "short": null,
+              "kind": null,
+              "daily": true,
+              "caption": false,
+              "people": [
+                "Maria"
+              ]
+            }
+          ]
+        },
+        {
+          "team": "Writers",
+          "roles": [
+            {
+              "role": "Captions",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": true,
+              "people": [
+                "Nima",
+                "Daniel"
+              ]
+            }
+          ]
+        }
+      ],
+      "pieces": [
+        {
+          "kind": "Inside",
+          "title": "Worship one-take",
+          "desc": "One unbroken cinematic shot of a worship moment, wide on the crowd or close on stage, with lyrics on screen. Grade, add lyrics, post.",
+          "bullets": [],
+          "tip": "Get a clean feed from the sound desk and mix it with room sound. One shooter stays on worship all session.",
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/DekV7PpThcV/",
+              "thumb": "/refs/DekV7PpThcV.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/DenstuMN_63/",
+              "thumb": "/refs/DenstuMN_63.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/DR-ZB3tiRUa/",
+              "thumb": "/refs/DR-ZB3tiRUa.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/DfC03xCRFXU/",
+              "thumb": "/refs/DfC03xCRFXU.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/DeaJhyiBfqU/",
+              "thumb": "/refs/DeaJhyiBfqU.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/Der6ySUhnfR/",
+              "thumb": "/refs/Der6ySUhnfR.webp"
+            }
+          ]
+        },
+        {
+          "kind": "Inside",
+          "title": "Sermon soundbite edit",
+          "desc": "The strongest lines from the preacher, cut with moments from the session. Build it up with stronger effects and pacing than a simple soundbite clip.",
+          "bullets": [],
+          "tip": null,
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/DceaYz9h06b/",
+              "thumb": "/refs/DceaYz9h06b.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/DfFf68NR838/",
+              "thumb": "/refs/DfFf68NR838.webp"
+            }
+          ]
+        },
+        {
+          "kind": "Outside",
+          "title": "\"Show us how excited you are\"",
+          "desc": "Ask arriving campers to show how excited they are for The Outpouring, each in their own way. Shoot as people arrive and feel the atmosphere.",
+          "bullets": [],
+          "tip": null,
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/DXcfSSWCrko/",
+              "thumb": "/refs/DXcfSSWCrko.webp"
+            }
+          ]
+        },
+        {
+          "kind": "Outside",
+          "title": "Fit check or doorway cam",
+          "desc": "Fit check: campers show off their outfits as they walk in. Doorway cam: a phone taped above the entrance films people coming in. The hook is the shot of someone taping it up.",
+          "bullets": [],
+          "tip": "Doorway cam needs a phone with plenty of storage and a power bank.",
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/DeNHKvtIMlE/",
+              "thumb": null
+            },
+            {
+              "url": "https://www.instagram.com/reel/DdPGQ7aN-h-/",
+              "thumb": "/refs/DdPGQ7aN-h-.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/DZdNgvgpmoJ/",
+              "thumb": "/refs/DZdNgvgpmoJ.webp"
+            }
+          ]
+        },
+        {
+          "kind": "Outside",
+          "title": "\"My first day of camp\" tracker: intros",
+          "desc": "Pick a few first-timers. Each says \"My name is ___ and this is my first day of camp.\" We check back with the same people on Sunday.",
+          "bullets": [],
+          "tip": null,
+          "idea": true,
+          "refs": []
+        },
+        {
+          "kind": "BTS",
+          "title": "Suggested: deadpan walkthrough or \"It's camp day\" hype",
+          "desc": "Deadpan: \"Come with me,\" then a straight-faced tour of the setup, pointing and naming things (\"Lights. Guitar. Bob.\"). Hype: someone excitedly runs through the venue over a trending audio spun to \"it's camp day.\"",
+          "bullets": [],
+          "tip": "Trending audio must fit the playlist rule or be cleared first.",
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/DesPnPbJ6Kg/",
+              "thumb": "/refs/DesPnPbJ6Kg.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/DZ5H6AuuuUk/",
+              "thumb": "/refs/DZ5H6AuuuUk.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fri-morn",
+      "name": "Friday morning",
+      "short": "Fri morn",
+      "time": "8:30AM",
+      "day": "Friday",
+      "start": "2026-11-06T08:30:00+01:00",
+      "end": "2026-11-06T13:00:00+01:00",
+      "note": null,
+      "countsPosts": true,
+      "teams": [
+        {
+          "team": "Video",
+          "roles": [
+            {
+              "role": "Inside shooting",
+              "short": "Shooting",
+              "kind": "Inside",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Divad",
+                "Dorcas"
+              ]
+            },
+            {
+              "role": "Inside editing",
+              "short": "Editing",
+              "kind": "Inside",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "King David"
+              ]
+            },
+            {
+              "role": "Outside",
+              "short": null,
+              "kind": "Outside",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Chizoba",
+                "Angel",
+                "Great"
+              ]
+            },
+            {
+              "role": "BTS",
+              "short": null,
+              "kind": "BTS",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Felicia"
+              ]
+            },
+            {
+              "role": "CD / comms",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Plus One",
+                "Promise"
+              ]
+            },
+            {
+              "role": "Inventory",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Awaji",
+                "Blossom"
+              ]
+            }
+          ]
+        },
+        {
+          "team": "Social media",
+          "roles": [
+            {
+              "role": "Stories",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Nanriee"
+              ]
+            },
+            {
+              "role": "Picture posts",
+              "short": null,
+              "kind": null,
+              "daily": true,
+              "caption": false,
+              "people": [
+                "Nidi"
+              ]
+            },
+            {
+              "role": "Video posts",
+              "short": null,
+              "kind": null,
+              "daily": true,
+              "caption": false,
+              "people": [
+                "Keturah"
+              ]
+            },
+            {
+              "role": "Comments",
+              "short": null,
+              "kind": null,
+              "daily": true,
+              "caption": false,
+              "people": [
+                "Nidi"
+              ]
+            }
+          ]
+        },
+        {
+          "team": "Writers",
+          "roles": [
+            {
+              "role": "Captions",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": true,
+              "people": [
+                "Nima",
+                "Mary"
+              ]
+            }
+          ]
+        }
+      ],
+      "pieces": [
+        {
+          "kind": "Inside",
+          "title": "Multi-frame layout edit",
+          "desc": "Cinematic clips arranged in shifting grids, with layout changes timed to sound effects. Shows what the session felt like in frames.",
+          "bullets": [],
+          "tip": "Use the layout templates prepared before camp, so it's just slotting clips in.",
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/De68-jHOpy0/",
+              "thumb": "/refs/De68-jHOpy0.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/DaoTLOehGBb/",
+              "thumb": "/refs/DaoTLOehGBb.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/Dd1_B76BpgL/",
+              "thumb": "/refs/Dd1_B76BpgL.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/DZ7y8pajPjd/",
+              "thumb": "/refs/DZ7y8pajPjd.webp"
+            }
+          ]
+        },
+        {
+          "kind": "Outside",
+          "title": "Where did you come from?",
+          "desc": "Ask people which city or church they travelled from, to show how far people came, including the Abuja team.",
+          "bullets": [],
+          "tip": null,
+          "idea": true,
+          "refs": []
+        },
+        {
+          "kind": "Outside",
+          "title": "This or that",
+          "desc": "Quick picks, cut fast: morning or night session, front row or back row, merch or corporate, jollof or fried rice.",
+          "bullets": [],
+          "tip": null,
+          "idea": true,
+          "refs": []
+        },
+        {
+          "kind": "Outside",
+          "title": "Vox pop: question bank",
+          "desc": "One question, many people, answers cut fast. Pick two or three questions from the bank.",
+          "bullets": [
+            "What are you trusting God for this camp?",
+            "Who did you come with?",
+            "What's one thing God said to you this camp?",
+            "What would you tell someone who missed today?",
+            "What's one moment from this camp you won't forget?",
+            "What has changed in you since Thursday?"
+          ],
+          "tip": null,
+          "idea": false,
+          "refs": []
+        },
+        {
+          "kind": "BTS",
+          "title": "Suggested: the pastor's perspective",
+          "desc": "The pastor shares thoughts before the session, cut with B-roll of the build-up from their side.",
+          "bullets": [],
+          "tip": null,
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/DeflCigTZbg/",
+              "thumb": "/refs/DeflCigTZbg.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/DaTpnhJCpY3/",
+              "thumb": "/refs/DaTpnhJCpY3.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fri-eve",
+      "name": "Friday evening",
+      "short": "Fri eve",
+      "time": "4PM",
+      "day": "Friday",
+      "start": "2026-11-06T16:00:00+01:00",
+      "end": "2026-11-06T20:30:00+01:00",
+      "note": null,
+      "countsPosts": true,
+      "teams": [
+        {
+          "team": "Video",
+          "roles": [
+            {
+              "role": "Inside shooting",
+              "short": "Shooting",
+              "kind": "Inside",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Marvy",
+                "Nate"
+              ]
+            },
+            {
+              "role": "Inside editing",
+              "short": "Editing",
+              "kind": "Inside",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Simon Arome",
+                "Demola"
+              ]
+            },
+            {
+              "role": "Outside",
+              "short": null,
+              "kind": "Outside",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Blossom",
+                "Kelvin",
+                "Nenrot"
+              ]
+            },
+            {
+              "role": "BTS",
+              "short": null,
+              "kind": "BTS",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Felicia"
+              ]
+            },
+            {
+              "role": "CD / comms",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Isaac",
+                "Plus One"
+              ]
+            },
+            {
+              "role": "Inventory",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Awaji",
+                "Emmah"
+              ]
+            }
+          ]
+        },
+        {
+          "team": "Social media",
+          "roles": [
+            {
+              "role": "Stories",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Dami"
+              ]
+            },
+            {
+              "role": "Picture posts",
+              "short": null,
+              "kind": null,
+              "daily": true,
+              "caption": false,
+              "people": [
+                "Nidi"
+              ]
+            },
+            {
+              "role": "Video posts",
+              "short": null,
+              "kind": null,
+              "daily": true,
+              "caption": false,
+              "people": [
+                "Keturah"
+              ]
+            },
+            {
+              "role": "Comments",
+              "short": null,
+              "kind": null,
+              "daily": true,
+              "caption": false,
+              "people": [
+                "Nidi"
+              ]
+            }
+          ]
+        },
+        {
+          "team": "Writers",
+          "roles": [
+            {
+              "role": "Captions",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": true,
+              "people": [
+                "Sharon",
+                "Nima"
+              ]
+            }
+          ]
+        }
+      ],
+      "pieces": [
+        {
+          "kind": "Inside",
+          "title": "Multi-frame layout edit",
+          "desc": "Cinematic clips arranged in shifting grids, with layout changes timed to sound effects. Shows what the session felt like in frames.",
+          "bullets": [],
+          "tip": "Use the layout templates prepared before camp, so it's just slotting clips in.",
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/De68-jHOpy0/",
+              "thumb": "/refs/De68-jHOpy0.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/DaoTLOehGBb/",
+              "thumb": "/refs/DaoTLOehGBb.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/Dd1_B76BpgL/",
+              "thumb": "/refs/Dd1_B76BpgL.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/DZ7y8pajPjd/",
+              "thumb": "/refs/DZ7y8pajPjd.webp"
+            }
+          ]
+        },
+        {
+          "kind": "Inside",
+          "title": "Experience-led recap",
+          "desc": "A camper shares their experience in their own words, and their voice carries into a recap of the session's moments.",
+          "bullets": [],
+          "tip": null,
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/DfFf68NR838/",
+              "thumb": "/refs/DfFf68NR838.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/DesRq8wxRjl/",
+              "thumb": "/refs/DesRq8wxRjl.webp"
+            }
+          ]
+        },
+        {
+          "kind": "Outside",
+          "title": "Text prompt + chair",
+          "desc": "An on-screen line, then different people take a seat one after another to complete it. Copy options: \"God is pouring out His Spirit on…\", \"The supply of the Spirit is for…\", \"This year, the outpouring is for…\".",
+          "bullets": [],
+          "tip": null,
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/DTkvq1ckvLj/",
+              "thumb": "/refs/DTkvq1ckvLj.webp"
+            }
+          ]
+        },
+        {
+          "kind": "Outside",
+          "title": "Vox pop: favorite part in one word",
+          "desc": "\"What's your favorite part of the conference, in one word?\" Cut the answers fast.",
+          "bullets": [],
+          "tip": null,
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/DeDMHFqB_u-/",
+              "thumb": "/refs/DeDMHFqB_u-.webp"
+            }
+          ]
+        },
+        {
+          "kind": "Outside",
+          "title": "Open mic outside",
+          "desc": "A standing mic outside the hall. People walk up and share what the session meant to them in a few words.",
+          "bullets": [],
+          "tip": "The stand mic is a prop. Record with a lav attached to the stand.",
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/Dd1IsHsuFYw/",
+              "thumb": "/refs/Dd1IsHsuFYw.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sat-morn",
+      "name": "Saturday morning",
+      "short": "Sat morn",
+      "time": "8:30AM",
+      "day": "Saturday",
+      "start": "2026-11-07T08:30:00+01:00",
+      "end": "2026-11-07T13:00:00+01:00",
+      "note": null,
+      "countsPosts": true,
+      "teams": [
+        {
+          "team": "Video",
+          "roles": [
+            {
+              "role": "Inside shooting",
+              "short": "Shooting",
+              "kind": "Inside",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Ugo",
+                "Dorcas"
+              ]
+            },
+            {
+              "role": "Inside editing",
+              "short": "Editing",
+              "kind": "Inside",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "King David"
+              ]
+            },
+            {
+              "role": "Outside",
+              "short": null,
+              "kind": "Outside",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Great",
+                "Divine Gift"
+              ]
+            },
+            {
+              "role": "BTS",
+              "short": null,
+              "kind": "BTS",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Felicia"
+              ]
+            },
+            {
+              "role": "CD / comms",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Plus One",
+                "Isaac"
+              ]
+            },
+            {
+              "role": "Inventory",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Awaji",
+                "Nenrot"
+              ]
+            }
+          ]
+        },
+        {
+          "team": "Social media",
+          "roles": [
+            {
+              "role": "Stories",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Nidi"
+              ]
+            },
+            {
+              "role": "Picture posts",
+              "short": null,
+              "kind": null,
+              "daily": true,
+              "caption": false,
+              "people": [
+                "Nanriee"
+              ]
+            },
+            {
+              "role": "Video posts",
+              "short": null,
+              "kind": null,
+              "daily": true,
+              "caption": false,
+              "people": [
+                "Nanriee"
+              ]
+            },
+            {
+              "role": "Comments",
+              "short": null,
+              "kind": null,
+              "daily": true,
+              "caption": false,
+              "people": [
+                "Maria"
+              ]
+            }
+          ]
+        },
+        {
+          "team": "Writers",
+          "roles": [
+            {
+              "role": "Captions",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": true,
+              "people": [
+                "Sharon",
+                "Daniel"
+              ]
+            }
+          ]
+        }
+      ],
+      "pieces": [
+        {
+          "kind": "Inside",
+          "title": "Worship one-take",
+          "desc": "One unbroken cinematic shot of a worship moment, wide on the crowd or close on stage, with lyrics on screen. Grade, add lyrics, post.",
+          "bullets": [],
+          "tip": "Get a clean feed from the sound desk and mix it with room sound. One shooter stays on worship all session.",
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/DekV7PpThcV/",
+              "thumb": "/refs/DekV7PpThcV.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/DenstuMN_63/",
+              "thumb": "/refs/DenstuMN_63.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/DR-ZB3tiRUa/",
+              "thumb": "/refs/DR-ZB3tiRUa.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/DfC03xCRFXU/",
+              "thumb": "/refs/DfC03xCRFXU.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/DeaJhyiBfqU/",
+              "thumb": "/refs/DeaJhyiBfqU.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/Der6ySUhnfR/",
+              "thumb": "/refs/Der6ySUhnfR.webp"
+            }
+          ]
+        },
+        {
+          "kind": "Outside",
+          "title": "First-timers vs. returning campers",
+          "desc": "Ask both groups the same question, like \"What are you expecting this camp?\" Cut as alternating answers with labels on screen (\"First time\" / \"5th camp\").",
+          "bullets": [],
+          "tip": null,
+          "idea": true,
+          "refs": []
+        },
+        {
+          "kind": "Outside",
+          "title": "How well do you know Gloryzone?",
+          "desc": "Quick questions on the church and the camp's history. Cut the right and wrong answers together.",
+          "bullets": [],
+          "tip": null,
+          "idea": true,
+          "refs": []
+        },
+        {
+          "kind": "Outside",
+          "title": "Vox pop: question bank",
+          "desc": "One question, many people, answers cut fast. Already asked: the soundtrack question, expectations, and last night in one word. Use these instead.",
+          "bullets": [
+            "What are you trusting God for this camp?",
+            "Who did you come with?",
+            "What's one thing God said to you this camp?",
+            "What would you tell someone who missed today?",
+            "What's one moment from this camp you won't forget?",
+            "What has changed in you since Thursday?"
+          ],
+          "tip": null,
+          "idea": false,
+          "refs": []
+        }
+      ]
+    },
+    {
+      "id": "sat-eve",
+      "name": "Saturday evening",
+      "short": "Sat eve",
+      "time": "4PM",
+      "day": "Saturday",
+      "start": "2026-11-07T16:00:00+01:00",
+      "end": "2026-11-07T20:30:00+01:00",
+      "note": null,
+      "countsPosts": true,
+      "teams": [
+        {
+          "team": "Video",
+          "roles": [
+            {
+              "role": "Inside shooting",
+              "short": "Shooting",
+              "kind": "Inside",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Divad",
+                "King David"
+              ]
+            },
+            {
+              "role": "Inside editing",
+              "short": "Editing",
+              "kind": "Inside",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Fristi",
+                "Kelvin"
+              ]
+            },
+            {
+              "role": "Outside",
+              "short": null,
+              "kind": "Outside",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Emmah",
+                "Angel",
+                "Amarachi"
+              ]
+            },
+            {
+              "role": "BTS",
+              "short": null,
+              "kind": "BTS",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Felicia"
+              ]
+            },
+            {
+              "role": "CD / comms",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Isaac",
+                "Plus One",
+                "Promise"
+              ]
+            },
+            {
+              "role": "Inventory",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Awaji",
+                "Divine Gift"
+              ]
+            }
+          ]
+        },
+        {
+          "team": "Social media",
+          "roles": [
+            {
+              "role": "Stories",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Promise"
+              ]
+            },
+            {
+              "role": "Picture posts",
+              "short": null,
+              "kind": null,
+              "daily": true,
+              "caption": false,
+              "people": [
+                "Nanriee"
+              ]
+            },
+            {
+              "role": "Video posts",
+              "short": null,
+              "kind": null,
+              "daily": true,
+              "caption": false,
+              "people": [
+                "Nanriee"
+              ]
+            },
+            {
+              "role": "Comments",
+              "short": null,
+              "kind": null,
+              "daily": true,
+              "caption": false,
+              "people": [
+                "Maria"
+              ]
+            }
+          ]
+        },
+        {
+          "team": "Writers",
+          "roles": [
+            {
+              "role": "Captions",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": true,
+              "people": [
+                "Mary",
+                "Daniel"
+              ]
+            }
+          ]
+        }
+      ],
+      "pieces": [
+        {
+          "kind": "Inside",
+          "title": "Empty vs. full: popping frames",
+          "desc": "Shoot a spot while it is empty. Keep that empty shot on screen and pop in frames of the same spot full during the session, in shifting layouts.",
+          "bullets": [],
+          "tip": "Tripod for a locked-off shot. Get the empty shot before the session starts, then film the same spot full.",
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/DYH47cay1ok/",
+              "thumb": "/refs/DYH47cay1ok.webp"
+            }
+          ]
+        },
+        {
+          "kind": "Inside",
+          "title": "Sermon soundbite edit",
+          "desc": "The strongest lines from the preacher, cut with moments from the session. Build it up with stronger effects and pacing than a simple soundbite clip. Fristi edits this one.",
+          "bullets": [],
+          "tip": null,
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/DceaYz9h06b/",
+              "thumb": "/refs/DceaYz9h06b.webp"
+            }
+          ]
+        },
+        {
+          "kind": "Outside",
+          "title": "Finish the lyric",
+          "desc": "Play a line from a song sung at camp and people finish it. Doubles as a recap of the worship so far.",
+          "bullets": [],
+          "tip": "Keep a list of songs sung in each session from Thursday.",
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/DefKWXmAkOa/",
+              "thumb": "/refs/DefKWXmAkOa.webp"
+            }
+          ]
+        },
+        {
+          "kind": "Outside",
+          "title": "Open mic outside",
+          "desc": "A standing mic outside the hall. People walk up and share what the session meant to them in a few words.",
+          "bullets": [],
+          "tip": "The stand mic is a prop. Record with a lav attached to the stand.",
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/Dd1IsHsuFYw/",
+              "thumb": "/refs/Dd1IsHsuFYw.webp"
+            }
+          ]
+        },
+        {
+          "kind": "Outside",
+          "title": "Complete the sentence",
+          "desc": "People finish the line in their own words: \"The Outpouring Camp 2026 has been…\".",
+          "bullets": [],
+          "tip": null,
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/DZHviDuMlk7/",
+              "thumb": "/refs/DZHviDuMlk7.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sun-morn",
+      "name": "Sunday morning",
+      "short": "Sun morn",
+      "time": "8:30AM · Finale",
+      "day": "Sunday",
+      "start": "2026-11-08T08:30:00+01:00",
+      "end": "2026-11-08T13:30:00+01:00",
+      "note": null,
+      "countsPosts": true,
+      "teams": [
+        {
+          "team": "Video",
+          "roles": [
+            {
+              "role": "Inside shooting",
+              "short": "Shooting",
+              "kind": "Inside",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Nate",
+                "Divad",
+                "Ugo"
+              ]
+            },
+            {
+              "role": "Inside editing",
+              "short": "Editing",
+              "kind": "Inside",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Simon Arome",
+                "Marvy"
+              ]
+            },
+            {
+              "role": "Outside",
+              "short": null,
+              "kind": "Outside",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Chizoba",
+                "Blossom",
+                "Divine Gift"
+              ]
+            },
+            {
+              "role": "BTS",
+              "short": null,
+              "kind": "BTS",
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Felicia"
+              ]
+            },
+            {
+              "role": "CD / comms",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Plus One",
+                "Promise"
+              ]
+            },
+            {
+              "role": "Inventory",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Awaji",
+                "Angel"
+              ]
+            }
+          ]
+        },
+        {
+          "team": "Social media",
+          "roles": [
+            {
+              "role": "Stories",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": false,
+              "people": [
+                "Cynthia",
+                "Silver",
+                "Dami"
+              ]
+            },
+            {
+              "role": "Picture posts",
+              "short": null,
+              "kind": null,
+              "daily": true,
+              "caption": false,
+              "people": [
+                "Nidi"
+              ]
+            },
+            {
+              "role": "Video posts",
+              "short": null,
+              "kind": null,
+              "daily": true,
+              "caption": false,
+              "people": [
+                "Nanriee"
+              ]
+            },
+            {
+              "role": "Comments",
+              "short": null,
+              "kind": null,
+              "daily": true,
+              "caption": false,
+              "people": [
+                "Nidi"
+              ]
+            }
+          ]
+        },
+        {
+          "team": "Writers",
+          "roles": [
+            {
+              "role": "Captions",
+              "short": null,
+              "kind": null,
+              "daily": false,
+              "caption": true,
+              "people": [
+                "Nima",
+                "Daniel",
+                "David"
+              ]
+            }
+          ]
+        }
+      ],
+      "pieces": [
+        {
+          "kind": "Inside",
+          "title": "Music montage",
+          "desc": "Cinematic clips from the session cut in sequence over a playlist song. Simon Arome edits this one.",
+          "bullets": [],
+          "tip": null,
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/DdrL4T9RT8V/",
+              "thumb": "/refs/DdrL4T9RT8V.webp"
+            }
+          ]
+        },
+        {
+          "kind": "Inside",
+          "title": "Camp recap film",
+          "desc": "A film covering all four days, built from footage gathered all week. A preview of the final highlight film. Marvy edits this one.",
+          "bullets": [],
+          "tip": "Start pulling selects from Saturday so it's ready in time.",
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/Deh-mlqRJbW/",
+              "thumb": "/refs/Deh-mlqRJbW.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/DeO_gkARVqY/",
+              "thumb": "/refs/DeO_gkARVqY.webp"
+            }
+          ]
+        },
+        {
+          "kind": "Outside",
+          "title": "Scripture relay",
+          "desc": "Different people each say one line of Isaiah 11:2, cut together: \"The Spirit of the Lord shall rest upon Him / the Spirit of wisdom and understanding / the Spirit of counsel and might / the Spirit of knowledge and of the fear of the Lord.\"",
+          "bullets": [],
+          "tip": null,
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/Ddoh2nChMRr/",
+              "thumb": "/refs/Ddoh2nChMRr.webp"
+            }
+          ]
+        },
+        {
+          "kind": "Outside",
+          "title": "Vox pop: one chance to tell a stranger",
+          "desc": "\"If you had only one chance to tell a stranger about The Outpouring Camp, what would you tell them?\"",
+          "bullets": [],
+          "tip": null,
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/DXMaBeSDdLc/",
+              "thumb": "/refs/DXMaBeSDdLc.webp"
+            }
+          ]
+        },
+        {
+          "kind": "Outside",
+          "title": "\"My first day of camp\" tracker: payoff",
+          "desc": "Find Thursday's first-timers and ask how camp went. Cut their day one intro against today's answer.",
+          "bullets": [],
+          "tip": null,
+          "idea": true,
+          "refs": []
+        }
+      ]
+    },
+    {
+      "id": "testimony",
+      "name": "Testimony stand",
+      "short": "Testimonies",
+      "time": "Every break, Thursday to Sunday",
+      "day": "",
+      "start": null,
+      "end": null,
+      "note": "Isaac runs the testimony stand. Shot during breaks, not sessions. The strongest also feed the recap and final film.",
+      "countsPosts": true,
+      "teams": [],
+      "pieces": [
+        {
+          "kind": "Inside",
+          "title": "Testimony: straight interview",
+          "desc": "Documentary-style sit-down at the testimony stand. The person shares their testimony on camera. Post as soon as one is ready.",
+          "bullets": [],
+          "tip": "Use a lav or dedicated mic at the stand.",
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/p/CBgp_KFgPp6/",
+              "thumb": "/refs/CBgp_KFgPp6.webp"
+            }
+          ]
+        },
+        {
+          "kind": "Inside",
+          "title": "Testimony: voiceover montage",
+          "desc": "For a testimony with an emotional edge, the person's voice plays over a montage of camp moments.",
+          "bullets": [],
+          "tip": null,
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/De9ZROBxpjR/",
+              "thumb": "/refs/De9ZROBxpjR.webp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "after",
+      "name": "After camp",
+      "short": "After camp",
+      "time": "The week camp ends",
+      "day": "",
+      "start": null,
+      "end": null,
+      "note": null,
+      "countsPosts": false,
+      "teams": [],
+      "pieces": [
+        {
+          "kind": "Inside",
+          "title": "Definitive highlight film",
+          "desc": "The full film of the camp, out the week camp ends. Fristi edits it.",
+          "bullets": [],
+          "tip": null,
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/reel/Deh-mlqRJbW/",
+              "thumb": "/refs/Deh-mlqRJbW.webp"
+            },
+            {
+              "url": "https://www.instagram.com/reel/DeO_gkARVqY/",
+              "thumb": "/refs/DeO_gkARVqY.webp"
+            },
+            {
+              "url": "https://youtu.be/y9VBeD0IEAU",
+              "thumb": "/refs/y9VBeD0IEAU.webp"
+            },
+            {
+              "url": "https://youtu.be/O8kApfwFCu8",
+              "thumb": "/refs/O8kApfwFCu8.webp"
+            }
+          ]
+        },
+        {
+          "kind": "Inside",
+          "title": "Photo + video carousels (any time)",
+          "desc": "Mix a few of the most cinematic video clips in among the photos in carousels.",
+          "bullets": [],
+          "tip": null,
+          "idea": false,
+          "refs": [
+            {
+              "url": "https://www.instagram.com/p/De4ZwgQkb9-/",
+              "thumb": "/refs/De4ZwgQkb9-.webp"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
