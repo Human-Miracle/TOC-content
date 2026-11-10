@@ -135,7 +135,8 @@ mark{background:var(--sun);color:var(--sun-ink);padding:0 4px;border-radius:4px;
 .rules b{color:var(--ink)}
 .hint2{margin:-2px 2px 12px;font-size:14px;color:var(--muted)}
 
-.pieces{display:grid;gap:14px}
+.pieces{display:grid;grid-template-columns:minmax(0,1fr);gap:14px}
+.list,.sess{min-width:0}
 .pc{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:clamp(18px,2.2vw,30px);position:relative;transition:translate .35s var(--ease),box-shadow .35s,border-color .25s;animation:rise .6s var(--ease) both;animation-delay:calc(var(--i,0) * 60ms)}
 .pc:hover{translate:0 -3px;box-shadow:var(--shadow);border-color:color-mix(in srgb,var(--brand-2) 55%,var(--line))}
 .pc.yours{border:2px solid var(--brand-2)}
@@ -152,12 +153,22 @@ mark{background:var(--sun);color:var(--sun-ink);padding:0 4px;border-radius:4px;
 .pc li::before{content:"";position:absolute;left:2px;top:.62em;width:10px;height:2px;background:var(--brand-2)}
 .tip{background:var(--cream);border-radius:12px;padding:12px 14px;margin-top:14px;font-size:14.5px;max-width:62ch}
 .tip b{color:var(--brand-2);margin-right:8px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:800}
-.refs{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
-.ref{font-size:14px;font-weight:800;text-decoration:none;color:var(--ink);border:1.5px solid var(--ink);border-radius:99px;padding:8px 14px 8px 16px;display:inline-flex;align-items:center;gap:8px;position:relative;overflow:hidden;isolation:isolate;transition:color .3s,border-color .3s}
-.ref::before{content:"";position:absolute;inset:0;background:var(--brand);z-index:-1;translate:0 101%;transition:translate .35s var(--ease);border-radius:inherit}
-.ref:hover{color:#fff;border-color:var(--brand)}.ref:hover::before{translate:0 0}
-.ref svg{width:13px;height:13px;flex:none;transition:translate .3s var(--ease)}
-.ref:hover svg{translate:2px -2px;color:var(--sun)}
+.refs{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:10px;margin-top:18px;max-width:780px}
+.refs.is-idea{display:flex}
+.ref{display:block;text-decoration:none;color:var(--ink);border-radius:14px;animation:rise .5s var(--ease) both;animation-delay:calc(var(--i,0) * 60ms + var(--j,0) * 40ms + 120ms)}
+.ref-img{display:block;position:relative;aspect-ratio:3/4;border-radius:14px;overflow:hidden;background:linear-gradient(160deg,var(--brand),var(--brand-deep));isolation:isolate}
+.ref-img img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;display:block;transition:scale .6s var(--ease),filter .4s}
+.ref-img::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(4,24,13,.78),rgba(4,24,13,0) 46%);pointer-events:none}
+.ref-img.noimg::before{content:"Preview not available";position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:12px;color:var(--on-brand-muted);font-size:12px;font-weight:700;line-height:1.3}
+.play{position:absolute;left:50%;top:50%;translate:-50% -50%;width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.92);color:var(--brand);display:grid;place-items:center;z-index:1;transition:background .25s,scale .35s var(--ease);box-shadow:0 6px 18px rgba(0,0,0,.3)}
+.play svg{width:16px;height:16px;margin-left:2px}
+.src{position:absolute;left:10px;bottom:9px;z-index:1;color:#fff;font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.ref-label{display:flex;align-items:center;justify-content:space-between;gap:6px;margin-top:8px;font-size:13px;font-weight:800;line-height:1.25;transition:color .2s}
+.ref-label svg{width:12px;height:12px;flex:none;transition:translate .3s var(--ease)}
+.ref:hover .ref-img img,.ref:focus-visible .ref-img img{scale:1.07}
+.ref:hover .play,.ref:focus-visible .play{background:var(--sun);color:var(--sun-ink);scale:1.12}
+.ref:hover .ref-label{color:var(--brand-2)}
+.ref:hover .ref-label svg{translate:2px -2px}
 .idea{font-size:12.5px;font-weight:800;background:var(--sun);color:var(--sun-ink);padding:6px 12px;border-radius:99px}
 .cap{margin-top:16px;padding-top:12px;border-top:1px dashed var(--line);font-size:14px;color:var(--muted)}
 .cap b{color:var(--ink);margin-right:6px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:800}
