@@ -60,7 +60,8 @@ img{max-width:100%}
 .marquee{background:var(--sun);color:var(--sun-ink);overflow:hidden;white-space:nowrap;font-family:var(--display);font-weight:800;font-stretch:112%;text-transform:uppercase;font-size:clamp(13px,1.3vw,17px);letter-spacing:.04em}
 .marquee-track{display:inline-flex;animation:mq 38s linear infinite}
 .marquee-track>div{display:inline-flex;align-items:center;padding-block:12px}
-.marquee span{padding-inline:18px}
+.mq-item{display:inline-flex;align-items:center}
+.mq-item>span{padding-inline:18px}
 .marquee i{width:9px;height:9px;border-radius:50%;background:var(--brand);flex:none}
 @keyframes mq{to{transform:translateX(-50%)}}
 
@@ -172,6 +173,7 @@ mark{background:var(--sun);color:var(--sun-ink);padding:0 4px;border-radius:4px;
 .idea{font-size:12.5px;font-weight:800;background:var(--sun);color:var(--sun-ink);padding:6px 12px;border-radius:99px}
 .cap{margin-top:16px;padding-top:12px;border-top:1px dashed var(--line);font-size:14px;color:var(--muted)}
 .cap b{color:var(--ink);margin-right:6px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:800}
+.pc-wrap{display:grid;gap:14px;min-width:0}
 .capx{margin:-8px 6px 4px}.capx .cap{border:0;margin:0;padding:0}
 details.pc summary{list-style:none;cursor:pointer;position:relative;padding-right:40px}
 details.pc summary::-webkit-details-marker{display:none}

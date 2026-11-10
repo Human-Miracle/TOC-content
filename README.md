@@ -1,20 +1,51 @@
-# TOC'26 Content Plan
+# TOC Content Plan
 
-The content plan for The Outpouring Camp '26 (Video, Social media, Writers). Nov 5–8, 2026, Jos.
+The content plan site for The Outpouring Camp (Video, Social media, Writers), with a CMS in progress.
 
-A static site with no build step.
+## How it works
 
-- `index.html`: page shell.
-- `assets/data.js`: every session, team, piece and reference link.
-- `assets/app.js`: name picker, duties, session tabs and piece cards.
-- `assets/styles.css`: design.
+- **Public page** (`/`): shows the latest *published* plan of the current event.
+- **Database** (Postgres on Neon): editors change the working tables. Pressing Publish saves a full snapshot of the event into `publications`. The public page reads only that snapshot, so unfinished edits never show.
+- **No database connected:** the site shows the built-in TOC'26 plan from `content/seed.json`. The same happens if the database cannot be reached, so the public page stays up.
 
-## Run locally
+## CMS build status
+
+1. Foundation (this step): Next.js, tables, import of the TOC'26 plan, public page reading the published snapshot. **Done.**
+2. Admin sign-in, People, Sessions, Roster. To do.
+3. Pieces and references with automatic thumbnails. To do.
+4. Event settings, editors, change log, restore, Publish button. To do.
+
+## Connect the database (once)
+
+1. In Vercel, open the project, then **Storage → Create Database → Neon**. Pick the free plan and connect it to this project for Production and Preview.
+2. Redeploy. The build creates the tables, loads the TOC'26 plan and publishes it.
+
+Vercel adds `DATABASE_URL` and `DATABASE_URL_UNPOOLED` to the project. Nothing needs to be copied by hand.
+
+## Folder map
+
+- `app/`: pages and `globals.css` (the design).
+- `components/PlanView.tsx`: name picker, duties, session tabs, piece cards.
+- `lib/snapshot.mjs`: tables to snapshot, snapshot to tables, publish.
+- `lib/plan.ts`: loads the live plan, with the built-in fallback.
+- `db/schema.sql`: tables. Safe to run more than once.
+- `scripts/db-setup.mjs`: runs before every build. Creates tables and seeds an empty database.
+- `content/seed.json`: the TOC'26 plan.
+- `public/refs/`: reference thumbnails.
+- `tests/`: seed and round-trip tests.
+
+## Commands
 
 ```bash
-npx serve .
+npm run dev
 ```
 
-## Deploy on Vercel
+```bash
+npm run build
+```
 
-Import the repository and keep the defaults (framework preset "Other", no build command, output directory `.`).
+```bash
+TEST_DATABASE_URL=postgres://... npm test
+```
+
+The round-trip test needs a scratch Postgres. It rolls back everything it writes.
