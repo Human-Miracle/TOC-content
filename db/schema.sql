@@ -114,3 +114,43 @@ create table if not exists publications (
   published_by  text
 );
 create index if not exists publications_latest on publications (event_id, published_at desc);
+
+-- ───────── Step 2: admin sign-in ─────────
+
+-- Local times typed in the admin are read in the event's time zone.
+alter table events add column if not exists timezone text not null default 'Africa/Lagos';
+
+create table if not exists users (
+  id             uuid primary key default gen_random_uuid(),
+  email          text not null unique check (email = lower(email)),
+  name           text not null,
+  password_hash  text not null,
+  role           text not null default 'editor' check (role in ('owner', 'editor')),
+  created_at     timestamptz not null default now()
+);
+
+-- Signed-in browsers. Only a hash of the cookie value is stored.
+create table if not exists auth_sessions (
+  token_hash  text primary key,
+  user_id     uuid not null references users(id) on delete cascade,
+  created_at  timestamptz not null default now(),
+  expires_at  timestamptz not null
+);
+
+-- One-time links for joining. `email` is null for the first owner's setup link.
+create table if not exists invites (
+  token_hash  text primary key,
+  email       text check (email = lower(email)),
+  role        text not null check (role in ('owner', 'editor')),
+  created_by  uuid references users(id) on delete set null,
+  created_at  timestamptz not null default now(),
+  expires_at  timestamptz not null,
+  used_at     timestamptz
+);
+
+-- Failed sign-ins, to slow down guessing.
+create table if not exists auth_attempts (
+  email  text not null,
+  at     timestamptz not null default now()
+);
+create index if not exists auth_attempts_recent on auth_attempts (email, at desc);

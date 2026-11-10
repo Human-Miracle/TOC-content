@@ -11,9 +11,9 @@ The content plan site for The Outpouring Camp (Video, Social media, Writers), wi
 ## CMS build status
 
 1. Foundation (this step): Next.js, tables, import of the TOC'26 plan, public page reading the published snapshot. **Done.**
-2. Admin sign-in, People, Sessions, Roster. To do.
+2. Admin at `/admin`: sign-in, People, Sessions and days, Teams and roles, Roster, Editors, Publish. **Done.**
 3. Pieces and references with automatic thumbnails. To do.
-4. Event settings, editors, change log, restore, Publish button. To do.
+4. Event settings, more than one event in the admin, change log, restore. To do.
 
 ## Connect the database (once)
 
@@ -22,11 +22,20 @@ The content plan site for The Outpouring Camp (Video, Social media, Writers), wi
 
 Vercel adds `DATABASE_URL` and `DATABASE_URL_UNPOOLED` to the project. Nothing needs to be copied by hand.
 
+## Admin sign-in
+
+- **First owner:** while nobody has an account, every build prints a one-time setup link in the Vercel build log (`/admin/join?token=...`). Open it, create the owner account. The link works once and lasts 7 days.
+- **More editors:** an owner opens Admin → Editors and creates a one-time join link for an email. That person chooses their own password.
+- **How it is protected:** passwords are hashed with scrypt, sign-in cookies are httpOnly and only their hash is stored, 8 wrong passwords lock an email for 15 minutes, and every save checks the signed-in user on the server.
+- **Publishing:** edits are saved as you go. The public page changes only when someone presses Publish on the Overview.
+
 ## Folder map
 
 - `app/`: pages and `globals.css` (the design).
 - `components/PlanView.tsx`: name picker, duties, session tabs, piece cards.
 - `lib/snapshot.mjs`: tables to snapshot, snapshot to tables, publish.
+- `app/admin/`: admin screens and `actions.ts` (every save).
+- `lib/auth.ts`, `lib/password.mjs`: sign-in, sessions, join links.
 - `lib/plan.ts`: loads the live plan, with the built-in fallback.
 - `db/schema.sql`: tables. Safe to run more than once.
 - `scripts/db-setup.mjs`: runs before every build. Creates tables and seeds an empty database.
