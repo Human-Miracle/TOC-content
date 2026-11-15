@@ -1,11 +1,11 @@
-// Content plan data, copied as is from the original TOC'26 Content Plan page.
+// Content plan data, copied as is from the original Content Plan page, updated for Armed and Dangerous'27.
 window.SESSIONS = [
   {
-    "id": "thu-eve",
-    "name": "Thursday evening",
-    "short": "Thu eve",
+    "id": "sat-eve",
+    "name": "Saturday evening",
+    "short": "Sat eve",
     "time": "4PM · Opening night",
-    "day": "Thursday",
+    "day": "Saturday",
     "teams": [
       {
         "team": "Video",
@@ -108,7 +108,7 @@ window.SESSIONS = [
       {
         "kind": "Outside",
         "title": "\"Show us how excited you are\"",
-        "desc": "Ask arriving campers to show how excited they are for The Outpouring, each in their own way. Shoot as people arrive and feel the atmosphere.",
+        "desc": "Ask arriving campers to show how excited they are for Armed and Dangerous, each in their own way. Shoot as people arrive and feel the atmosphere.",
         "refs": [
           "https://www.instagram.com/reel/DXcfSSWCrko/"
         ],
@@ -130,7 +130,7 @@ window.SESSIONS = [
       {
         "kind": "Outside",
         "title": "\"My first day of camp\" tracker: intros",
-        "desc": "Pick a few first-timers. Each says \"My name is ___ and this is my first day of camp.\" We check back with the same people on Sunday.",
+        "desc": "Pick a few first-timers. Each says \"My name is ___ and this is my first day of camp.\" We check back with the same people on Tuesday.",
         "refs": [],
         "tip": null,
         "idea": true
@@ -149,11 +149,11 @@ window.SESSIONS = [
     ]
   },
   {
-    "id": "fri-morn",
-    "name": "Friday morning",
-    "short": "Fri morn",
+    "id": "sun-morn",
+    "name": "Sunday morning",
+    "short": "Sun morn",
     "time": "8:30AM",
-    "day": "Friday",
+    "day": "Sunday",
     "teams": [
       {
         "team": "Video",
@@ -259,7 +259,7 @@ window.SESSIONS = [
       {
         "kind": "Outside",
         "title": "Vox pop: question bank",
-        "desc": "One question, many people, answers cut fast. Pick two or three questions from the bank.<ul><li>What are you trusting God for this camp?</li><li>Who did you come with?</li><li>What's one thing God said to you this camp?</li><li>What would you tell someone who missed today?</li><li>What's one moment from this camp you won't forget?</li><li>What has changed in you since Thursday?</li></ul>",
+        "desc": "One question, many people, answers cut fast. Pick two or three questions from the bank.<ul><li>What are you trusting God for this camp?</li><li>Who did you come with?</li><li>What's one thing God said to you this camp?</li><li>What would you tell someone who missed today?</li><li>What's one moment from this camp you won't forget?</li><li>What has changed in you since Saturday?</li></ul>",
         "refs": [],
         "tip": null,
         "idea": false
@@ -278,11 +278,11 @@ window.SESSIONS = [
     ]
   },
   {
-    "id": "fri-eve",
-    "name": "Friday evening",
-    "short": "Fri eve",
+    "id": "sun-eve",
+    "name": "Sunday evening",
+    "short": "Sun eve",
     "time": "4PM",
-    "day": "Friday",
+    "day": "Sunday",
     "teams": [
       {
         "team": "Video",
@@ -413,11 +413,11 @@ window.SESSIONS = [
     ]
   },
   {
-    "id": "sat-morn",
-    "name": "Saturday morning",
-    "short": "Sat morn",
+    "id": "mon-morn",
+    "name": "Monday morning",
+    "short": "Mon morn",
     "time": "8:30AM",
-    "day": "Saturday",
+    "day": "Monday",
     "teams": [
       {
         "team": "Video",
@@ -516,7 +516,7 @@ window.SESSIONS = [
       },
       {
         "kind": "Outside",
-        "title": "How well do you know Gloryzone?",
+        "title": "How well do you know Lighthouse?",
         "desc": "Quick questions on the church and the camp's history. Cut the right and wrong answers together.",
         "refs": [],
         "tip": null,
@@ -525,7 +525,7 @@ window.SESSIONS = [
       {
         "kind": "Outside",
         "title": "Vox pop: question bank",
-        "desc": "One question, many people, answers cut fast. Already asked: the soundtrack question, expectations, and last night in one word. Use these instead.<ul><li>What are you trusting God for this camp?</li><li>Who did you come with?</li><li>What's one thing God said to you this camp?</li><li>What would you tell someone who missed today?</li><li>What's one moment from this camp you won't forget?</li><li>What has changed in you since Thursday?</li></ul>",
+        "desc": "One question, many people, answers cut fast. Already asked: the soundtrack question, expectations, and last night in one word. Use these instead.<ul><li>What are you trusting God for this camp?</li><li>Who did you come with?</li><li>What's one thing God said to you this camp?</li><li>What would you tell someone who missed today?</li><li>What's one moment from this camp you won't forget?</li><li>What has changed in you since Saturday?</li></ul>",
         "refs": [],
         "tip": null,
         "idea": false
@@ -533,11 +533,11 @@ window.SESSIONS = [
     ]
   },
   {
-    "id": "sat-eve",
-    "name": "Saturday evening",
-    "short": "Sat eve",
+    "id": "mon-eve",
+    "name": "Monday evening",
+    "short": "Mon eve",
     "time": "4PM",
-    "day": "Saturday",
+    "day": "Monday",
     "teams": [
       {
         "team": "Video",
@@ -638,7 +638,7 @@ window.SESSIONS = [
         "refs": [
           "https://www.instagram.com/reel/DefKWXmAkOa/"
         ],
-        "tip": "Keep a list of songs sung in each session from Thursday.",
+        "tip": "Keep a list of songs sung in each session from Saturday.",
         "idea": false
       },
       {
@@ -654,7 +654,7 @@ window.SESSIONS = [
       {
         "kind": "Outside",
         "title": "Complete the sentence",
-        "desc": "People finish the line in their own words: \"The Outpouring Camp 2026 has been…\".",
+        "desc": "People finish the line in their own words: \"Armed and Dangerous 2027 has been…\".",
         "refs": [
           "https://www.instagram.com/reel/DZHviDuMlk7/"
         ],
@@ -664,11 +664,11 @@ window.SESSIONS = [
     ]
   },
   {
-    "id": "sun-morn",
-    "name": "Sunday morning",
-    "short": "Sun morn",
+    "id": "tue-morn",
+    "name": "Tuesday morning",
+    "short": "Tue morn",
     "time": "8:30AM · Finale",
-    "day": "Sunday",
+    "day": "Tuesday",
     "teams": [
       {
         "team": "Video",
@@ -760,7 +760,7 @@ window.SESSIONS = [
           "https://www.instagram.com/reel/Deh-mlqRJbW/",
           "https://www.instagram.com/reel/DeO_gkARVqY/"
         ],
-        "tip": "Start pulling selects from Saturday so it's ready in time.",
+        "tip": "Start pulling selects from Monday so it's ready in time.",
         "idea": false
       },
       {
@@ -776,7 +776,7 @@ window.SESSIONS = [
       {
         "kind": "Outside",
         "title": "Vox pop: one chance to tell a stranger",
-        "desc": "\"If you had only one chance to tell a stranger about The Outpouring Camp, what would you tell them?\"",
+        "desc": "\"If you had only one chance to tell a stranger about Armed and Dangerous, what would you tell them?\"",
         "refs": [
           "https://www.instagram.com/reel/DXMaBeSDdLc/"
         ],
@@ -786,7 +786,7 @@ window.SESSIONS = [
       {
         "kind": "Outside",
         "title": "\"My first day of camp\" tracker: payoff",
-        "desc": "Find Thursday's first-timers and ask how camp went. Cut their day one intro against today's answer.",
+        "desc": "Find Saturday's first-timers and ask how camp went. Cut their day one intro against today's answer.",
         "refs": [],
         "tip": null,
         "idea": true
@@ -797,7 +797,7 @@ window.SESSIONS = [
     "id": "testimony",
     "name": "Testimony stand",
     "short": "Testimonies",
-    "time": "Every break, Thursday to Sunday",
+    "time": "Every break, Saturday to Tuesday",
     "day": "",
     "teams": [],
     "note": "Isaac runs the testimony stand. Shot during breaks, not sessions. The strongest also feed the recap and final film.",
