@@ -1,6 +1,6 @@
-# TOC'26 Content Plan
+# Armed and Dangerous'27 Content Plan
 
-The content plan for The Outpouring Camp '26 (Video, Social media, Writers). Nov 5–8, 2026, Jos.
+The content plan for Armed and Dangerous'27 (Video, Social media, Writers). Jul 17–20, 2027, Jos.
 
 A static site with no build step.
 

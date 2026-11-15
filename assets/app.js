@@ -1,13 +1,13 @@
-/* TOC'26 Content Plan. Same behaviour as the original page: pick your name, see your duties, browse sessions. */
+/* Armed and Dangerous'27 Content Plan. Same behaviour as the original page: pick your name, see your duties, browse sessions. */
 (function () {
   const SESSIONS = window.SESSIONS;
   const $ = id => document.getElementById(id);
   const ROLE_SHORT = { 'Inside shooting': 'Shooting', 'Inside editing': 'Editing', 'CD / comms': 'CD / comms' };
   const rs = r => ROLE_SHORT[r] || r;
   const TEAM_ORDER = ['Video', 'Social media', 'Writers'];
-  const START = { 'thu-eve': '2026-11-05T16:00:00+01:00', 'fri-morn': '2026-11-06T08:30:00+01:00', 'fri-eve': '2026-11-06T16:00:00+01:00', 'sat-morn': '2026-11-07T08:30:00+01:00', 'sat-eve': '2026-11-07T16:00:00+01:00', 'sun-morn': '2026-11-08T08:30:00+01:00' };
-  const DAYEND = { 'Thursday': '2026-11-05T23:00:00+01:00', 'Friday': '2026-11-06T23:00:00+01:00', 'Saturday': '2026-11-07T23:00:00+01:00', 'Sunday': '2026-11-08T16:00:00+01:00' };
-  const sessEnd = id => new Date(new Date(START[id]).getTime() + (id === 'sun-morn' ? 5 : 4.5) * 3600e3);
+  const START = { 'sat-eve': '2027-07-17T16:00:00+01:00', 'sun-morn': '2027-07-18T08:30:00+01:00', 'sun-eve': '2027-07-18T16:00:00+01:00', 'mon-morn': '2027-07-19T08:30:00+01:00', 'mon-eve': '2027-07-19T16:00:00+01:00', 'tue-morn': '2027-07-20T08:30:00+01:00' };
+  const DAYEND = { 'Saturday': '2027-07-17T23:00:00+01:00', 'Sunday': '2027-07-18T23:00:00+01:00', 'Monday': '2027-07-19T23:00:00+01:00', 'Tuesday': '2027-07-20T16:00:00+01:00' };
+  const sessEnd = id => new Date(new Date(START[id]).getTime() + (id === 'tue-morn' ? 5 : 4.5) * 3600e3);
   const split = p => p.split(',').map(x => x.trim()).filter(Boolean);
   const pad = n => String(n).padStart(2, '0');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -38,7 +38,7 @@
     sel.appendChild(g);
   });
 
-  let me = ''; try { me = localStorage.getItem('toc26-me') || ''; } catch (e) {}
+  let me = ''; try { me = localStorage.getItem('ad27-me') || ''; } catch (e) {}
   if (!people[me]) me = ''; sel.value = me;
   function nextDuty() { if (!me) return null; const now = new Date(); return people[me].find(d => d.end > now) || null; }
   let current = (location.hash || '').slice(1);
@@ -119,7 +119,7 @@
       if (full) return `<article class="pc${yours ? ' yours' : ''}" style="--i:${i}">${head}<h3>${p.title}</h3>${body}${cap}</article>`;
       return `<details class="pc" style="--i:${i}"><summary>${head}<h3>${p.title}</h3></summary>${body}</details>${cap ? `<div class="capx">${cap}</div>` : ''}`;
     }).join('');
-    const rules = full ? `<p class="rules"><b>Video team:</b> music comes from Nate's approved playlist only, and every edit carries the Gloryzone / TOC'26 look. Teams split their pieces among themselves.</p>` : '';
+    const rules = full ? `<p class="rules"><b>Video team:</b> music comes from Nate's approved playlist only, and every edit carries the Gloryzone / Armed and Dangerous'27 look. Teams split their pieces among themselves.</p>` : '';
     const who = roles.length ? ` · You're on ${roles.map(r => rs(r.role)).join(' + ')}` : '';
     const label = s.id === 'after' ? 'Pieces' : `Going out this session · ${posts}`;
     const hint = full ? '' : '<p class="hint2">Tap a piece to see what it is.</p>';
@@ -149,7 +149,7 @@
   }
 
   sel.onchange = () => {
-    me = sel.value; try { localStorage.setItem('toc26-me', me); } catch (e) {}
+    me = sel.value; try { localStorage.setItem('ad27-me', me); } catch (e) {}
     const n = nextDuty(); if (n) { current = n.id; history.replaceState(null, '', '#' + n.id); }
     renderDuties(); swap(() => { renderTabs(); renderView(); });
   };
@@ -159,7 +159,7 @@
   });
 
   // Marquee: the page's own words, repeated.
-  const words = ['The Outpouring Camp \'26', 'Regnum: The Supply of the Spirit', 'Gloryzone Global', 'Video', 'Social media', 'Writers', 'Nov 5–8, 2026', 'Jos'];
+  const words = ['Armed and Dangerous\'27', 'Regnum: The Supply of the Spirit', 'Gloryzone Global', 'Video', 'Social media', 'Writers', 'Jul 17–20, 2027', 'Jos'];
   const run = words.map(w => `<span>${w}</span><i></i>`).join('');
   $('marquee').innerHTML = `<div>${run}</div><div>${run}</div>`;
 
@@ -168,7 +168,7 @@
     const root = document.documentElement;
     const dark = root.dataset.theme ? root.dataset.theme === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
     root.dataset.theme = dark ? 'light' : 'dark';
-    try { localStorage.setItem('toc26-theme', root.dataset.theme); } catch (e) {}
+    try { localStorage.setItem('ad27-theme', root.dataset.theme); } catch (e) {}
   };
 
   // Sticky tab bar shadow + hero parallax
