@@ -159,7 +159,7 @@
   });
 
   // Marquee: the page's own words, repeated.
-  const words = ['Armed and Dangerous\'27', 'Pneumatikus: Distributions of the Spirit', 'Lighthouse Church', 'Video', 'Social media', 'Writers', 'Jul 17–20, 2027', 'Jos'];
+  const words = ['Armed and Dangerous\'27', 'Pneumatikus: Distributions of the Spirit', 'Lighthouse Church', 'Video', 'Social media', 'Writers', 'Jul 17–20, 2027', 'Kaduna'];
   const run = words.map(w => `<span>${w}</span><i></i>`).join('');
   $('marquee').innerHTML = `<div>${run}</div><div>${run}</div>`;
 
