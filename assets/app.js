@@ -119,7 +119,7 @@
       if (full) return `<article class="pc${yours ? ' yours' : ''}" style="--i:${i}">${head}<h3>${p.title}</h3>${body}${cap}</article>`;
       return `<details class="pc" style="--i:${i}"><summary>${head}<h3>${p.title}</h3></summary>${body}</details>${cap ? `<div class="capx">${cap}</div>` : ''}`;
     }).join('');
-    const rules = full ? `<p class="rules"><b>Video team:</b> music comes from Nate's approved playlist only, and every edit carries the Gloryzone / Armed and Dangerous'27 look. Teams split their pieces among themselves.</p>` : '';
+    const rules = full ? `<p class="rules"><b>Video team:</b> music comes from Nate's approved playlist only, and every edit carries the Lighthouse / Armed and Dangerous'27 look. Teams split their pieces among themselves.</p>` : '';
     const who = roles.length ? ` · You're on ${roles.map(r => rs(r.role)).join(' + ')}` : '';
     const label = s.id === 'after' ? 'Pieces' : `Going out this session · ${posts}`;
     const hint = full ? '' : '<p class="hint2">Tap a piece to see what it is.</p>';
@@ -159,7 +159,7 @@
   });
 
   // Marquee: the page's own words, repeated.
-  const words = ['Armed and Dangerous\'27', 'Regnum: The Supply of the Spirit', 'Gloryzone Global', 'Video', 'Social media', 'Writers', 'Jul 17–20, 2027', 'Jos'];
+  const words = ['Armed and Dangerous\'27', 'Pneumatikus: Distributions of the Spirit', 'Lighthouse Church', 'Video', 'Social media', 'Writers', 'Jul 17–20, 2027', 'Jos'];
   const run = words.map(w => `<span>${w}</span><i></i>`).join('');
   $('marquee').innerHTML = `<div>${run}</div><div>${run}</div>`;
 

@@ -516,7 +516,7 @@ window.SESSIONS = [
       },
       {
         "kind": "Outside",
-        "title": "How well do you know Gloryzone?",
+        "title": "How well do you know Lighthouse?",
         "desc": "Quick questions on the church and the camp's history. Cut the right and wrong answers together.",
         "refs": [],
         "tip": null,
