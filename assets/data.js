@@ -1,11 +1,11 @@
 // Content plan data, copied as is from the original Content Plan page, updated for Armed and Dangerous'27.
 window.SESSIONS = [
   {
-    "id": "sat-eve",
-    "name": "Saturday evening",
-    "short": "Sat eve",
+    "id": "thu-eve",
+    "name": "Thursday evening",
+    "short": "Thu eve",
     "time": "4PM · Opening night",
-    "day": "Saturday",
+    "day": "Thursday",
     "teams": [
       {
         "team": "Video",
@@ -130,7 +130,7 @@ window.SESSIONS = [
       {
         "kind": "Outside",
         "title": "\"My first day of camp\" tracker: intros",
-        "desc": "Pick a few first-timers. Each says \"My name is ___ and this is my first day of camp.\" We check back with the same people on Tuesday.",
+        "desc": "Pick a few first-timers. Each says \"My name is ___ and this is my first day of camp.\" We check back with the same people on Sunday.",
         "refs": [],
         "tip": null,
         "idea": true
@@ -149,11 +149,11 @@ window.SESSIONS = [
     ]
   },
   {
-    "id": "sun-morn",
-    "name": "Sunday morning",
-    "short": "Sun morn",
+    "id": "fri-morn",
+    "name": "Friday morning",
+    "short": "Fri morn",
     "time": "8:30AM",
-    "day": "Sunday",
+    "day": "Friday",
     "teams": [
       {
         "team": "Video",
@@ -259,7 +259,7 @@ window.SESSIONS = [
       {
         "kind": "Outside",
         "title": "Vox pop: question bank",
-        "desc": "One question, many people, answers cut fast. Pick two or three questions from the bank.<ul><li>What are you trusting God for this camp?</li><li>Who did you come with?</li><li>What's one thing God said to you this camp?</li><li>What would you tell someone who missed today?</li><li>What's one moment from this camp you won't forget?</li><li>What has changed in you since Saturday?</li></ul>",
+        "desc": "One question, many people, answers cut fast. Pick two or three questions from the bank.<ul><li>What are you trusting God for this camp?</li><li>Who did you come with?</li><li>What's one thing God said to you this camp?</li><li>What would you tell someone who missed today?</li><li>What's one moment from this camp you won't forget?</li><li>What has changed in you since Thursday?</li></ul>",
         "refs": [],
         "tip": null,
         "idea": false
@@ -278,11 +278,11 @@ window.SESSIONS = [
     ]
   },
   {
-    "id": "sun-eve",
-    "name": "Sunday evening",
-    "short": "Sun eve",
+    "id": "fri-eve",
+    "name": "Friday evening",
+    "short": "Fri eve",
     "time": "4PM",
-    "day": "Sunday",
+    "day": "Friday",
     "teams": [
       {
         "team": "Video",
@@ -413,11 +413,11 @@ window.SESSIONS = [
     ]
   },
   {
-    "id": "mon-morn",
-    "name": "Monday morning",
-    "short": "Mon morn",
+    "id": "sat-morn",
+    "name": "Saturday morning",
+    "short": "Sat morn",
     "time": "8:30AM",
-    "day": "Monday",
+    "day": "Saturday",
     "teams": [
       {
         "team": "Video",
@@ -525,7 +525,7 @@ window.SESSIONS = [
       {
         "kind": "Outside",
         "title": "Vox pop: question bank",
-        "desc": "One question, many people, answers cut fast. Already asked: the soundtrack question, expectations, and last night in one word. Use these instead.<ul><li>What are you trusting God for this camp?</li><li>Who did you come with?</li><li>What's one thing God said to you this camp?</li><li>What would you tell someone who missed today?</li><li>What's one moment from this camp you won't forget?</li><li>What has changed in you since Saturday?</li></ul>",
+        "desc": "One question, many people, answers cut fast. Already asked: the soundtrack question, expectations, and last night in one word. Use these instead.<ul><li>What are you trusting God for this camp?</li><li>Who did you come with?</li><li>What's one thing God said to you this camp?</li><li>What would you tell someone who missed today?</li><li>What's one moment from this camp you won't forget?</li><li>What has changed in you since Thursday?</li></ul>",
         "refs": [],
         "tip": null,
         "idea": false
@@ -533,11 +533,11 @@ window.SESSIONS = [
     ]
   },
   {
-    "id": "mon-eve",
-    "name": "Monday evening",
-    "short": "Mon eve",
+    "id": "sat-eve",
+    "name": "Saturday evening",
+    "short": "Sat eve",
     "time": "4PM",
-    "day": "Monday",
+    "day": "Saturday",
     "teams": [
       {
         "team": "Video",
@@ -638,7 +638,7 @@ window.SESSIONS = [
         "refs": [
           "https://www.instagram.com/reel/DefKWXmAkOa/"
         ],
-        "tip": "Keep a list of songs sung in each session from Saturday.",
+        "tip": "Keep a list of songs sung in each session from Thursday.",
         "idea": false
       },
       {
@@ -664,11 +664,11 @@ window.SESSIONS = [
     ]
   },
   {
-    "id": "tue-morn",
-    "name": "Tuesday morning",
-    "short": "Tue morn",
+    "id": "sun-morn",
+    "name": "Sunday morning",
+    "short": "Sun morn",
     "time": "8:30AM · Finale",
-    "day": "Tuesday",
+    "day": "Sunday",
     "teams": [
       {
         "team": "Video",
@@ -760,7 +760,7 @@ window.SESSIONS = [
           "https://www.instagram.com/reel/Deh-mlqRJbW/",
           "https://www.instagram.com/reel/DeO_gkARVqY/"
         ],
-        "tip": "Start pulling selects from Monday so it's ready in time.",
+        "tip": "Start pulling selects from Saturday so it's ready in time.",
         "idea": false
       },
       {
@@ -786,7 +786,7 @@ window.SESSIONS = [
       {
         "kind": "Outside",
         "title": "\"My first day of camp\" tracker: payoff",
-        "desc": "Find Saturday's first-timers and ask how camp went. Cut their day one intro against today's answer.",
+        "desc": "Find Thursday's first-timers and ask how camp went. Cut their day one intro against today's answer.",
         "refs": [],
         "tip": null,
         "idea": true
@@ -797,7 +797,7 @@ window.SESSIONS = [
     "id": "testimony",
     "name": "Testimony stand",
     "short": "Testimonies",
-    "time": "Every break, Saturday to Tuesday",
+    "time": "Every break, Thursday to Sunday",
     "day": "",
     "teams": [],
     "note": "Isaac runs the testimony stand. Shot during breaks, not sessions. The strongest also feed the recap and final film.",
