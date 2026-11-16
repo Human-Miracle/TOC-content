@@ -28,18 +28,24 @@
   }))));
   Object.values(people).forEach(l => l.forEach(d => d.sub = d.pre + ' · ' + d.parts.join(' + ')));
 
-  const sel = $('who');
-  TEAM_ORDER.forEach(team => {
-    const g = document.createElement('optgroup'); g.label = team;
-    Object.keys(people).filter(p => teamsOf[p].has(team)).sort((a, b) => a.localeCompare(b)).forEach(p => {
-      if (team !== [...teamsOf[p]].sort((a, b) => TEAM_ORDER.indexOf(a) - TEAM_ORDER.indexOf(b))[0]) return;
-      const o = document.createElement('option'); o.value = p; o.textContent = p; g.appendChild(o);
-    });
-    sel.appendChild(g);
+  // Name picker: our own dropdown (a bottom sheet on phones) instead of the system select.
+  const pick = $('who'), pop = $('who-pop'), list = $('who-list'), back = $('who-back'), opts = [];
+  function addOpt(parent, value, text) {
+    const li = document.createElement('li'); li.setAttribute('role', 'option'); li.id = 'who-o' + opts.length;
+    li.dataset.value = value; li.textContent = text; parent.appendChild(li); opts.push(li);
+  }
+  addOpt(list, '', 'Just browsing');
+  TEAM_ORDER.forEach((team, gi) => {
+    const names = Object.keys(people).filter(p => teamsOf[p].has(team)).sort((a, b) => a.localeCompare(b))
+      .filter(p => team === [...teamsOf[p]].sort((a, b) => TEAM_ORDER.indexOf(a) - TEAM_ORDER.indexOf(b))[0]);
+    if (!names.length) return;
+    const g = document.createElement('li'); g.setAttribute('role', 'presentation');
+    g.innerHTML = `<div class="pick-group" id="who-g${gi}">${team}</div><ul role="group" aria-labelledby="who-g${gi}"></ul>`;
+    list.appendChild(g); names.forEach(p => addOpt(g.lastChild, p, p));
   });
 
   let me = ''; try { me = localStorage.getItem('ad27-me') || ''; } catch (e) {}
-  if (!people[me]) me = ''; sel.value = me;
+  if (!people[me]) me = '';
   function nextDuty() { if (!me) return null; const now = new Date(); return people[me].find(d => d.end > now) || null; }
   let current = (location.hash || '').slice(1);
   if (!SESSIONS.find(s => s.id === current)) { const n = nextDuty(); current = n ? n.id : (me ? people[me][0].id : SESSIONS[0].id); }
@@ -148,11 +154,57 @@
     if (scroll) $('plan').scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
   }
 
-  sel.onchange = () => {
-    me = sel.value; try { localStorage.setItem('ad27-me', me); } catch (e) {}
+  let active = -1, typed = '', typedAt = 0;
+  const isOpen = () => !pop.hidden;
+  function syncPick() {
+    $('who-label').textContent = me || 'Pick your name'; pick.classList.toggle('empty', !me);
+    opts.forEach(o => o.setAttribute('aria-selected', o.dataset.value === me));
+  }
+  function setActive(i, scroll) {
+    active = i; opts.forEach((o, j) => o.classList.toggle('active', j === i));
+    const o = opts[i]; if (!o) return;
+    list.setAttribute('aria-activedescendant', o.id); if (scroll) o.scrollIntoView({ block: 'nearest' });
+  }
+  function openPick() {
+    pop.hidden = false; back.hidden = false; pick.setAttribute('aria-expanded', 'true');
+    document.documentElement.classList.add('picking'); typed = '';
+    setActive(Math.max(0, opts.findIndex(o => o.dataset.value === me)), true); list.focus({ preventScroll: true });
+  }
+  function closePick(refocus) {
+    if (!isOpen()) return;
+    pop.hidden = true; back.hidden = true; pick.setAttribute('aria-expanded', 'false');
+    document.documentElement.classList.remove('picking'); if (refocus) pick.focus({ preventScroll: true });
+  }
+  function choose(v) {
+    closePick(true); if (v === me) return;
+    me = v; try { localStorage.setItem('ad27-me', me); } catch (e) {}
+    syncPick();
     const n = nextDuty(); if (n) { current = n.id; history.replaceState(null, '', '#' + n.id); }
     renderDuties(); swap(() => { renderTabs(); renderView(); });
+  }
+  pick.onclick = () => isOpen() ? closePick(true) : openPick();
+  pick.onkeydown = e => { if (e.key === 'ArrowDown' || e.key === 'ArrowUp') { e.preventDefault(); openPick(); } };
+  list.onclick = e => { const o = e.target.closest('[role="option"]'); if (o) choose(o.dataset.value); };
+  list.onpointermove = e => { const i = opts.indexOf(e.target.closest('[role="option"]')); if (i >= 0 && i !== active) setActive(i, false); };
+  list.onkeydown = e => {
+    const last = opts.length - 1, k = e.key;
+    if (k === 'ArrowDown') setActive(Math.min(active + 1, last), true);
+    else if (k === 'ArrowUp') setActive(Math.max(active - 1, 0), true);
+    else if (k === 'Home') setActive(0, true);
+    else if (k === 'End') setActive(last, true);
+    else if (k === 'Enter' || k === ' ') { if (opts[active]) choose(opts[active].dataset.value); }
+    else if (k === 'Escape') closePick(true);
+    else if (k === 'Tab') { closePick(true); return; }
+    else if (k.length === 1 && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      const now = Date.now(); typed = (now - typedAt > 700 ? '' : typed) + k.toLowerCase(); typedAt = now;
+      const i = opts.findIndex(o => o.dataset.value && o.textContent.toLowerCase().startsWith(typed)); if (i >= 0) setActive(i, true);
+    } else return;
+    e.preventDefault();
   };
+  back.onclick = () => closePick(false);
+  $('who-x').onclick = () => closePick(true);
+  document.addEventListener('pointerdown', e => { if (isOpen() && !e.target.closest('#who-wrap')) closePick(false); });
+  syncPick();
   window.addEventListener('hashchange', () => {
     const h = location.hash.slice(1);
     if (SESSIONS.find(s => s.id === h) && h !== current) { current = h; renderTabs(); renderView(); }

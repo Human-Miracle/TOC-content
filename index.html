@@ -65,9 +65,16 @@
       <h2><label for="who">Who are you?</label></h2>
     </div>
     <div class="who-body">
-      <div class="select-wrap">
-        <select id="who"><option value="">Pick your name</option></select>
-        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 8 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2.2"/></svg>
+      <div class="select-wrap" id="who-wrap">
+        <button class="pick empty" id="who" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="who-list">
+          <span id="who-label">Pick your name</span>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 8 5 5 5-5" fill="none" stroke="currentColor" stroke-width="2.2"/></svg>
+        </button>
+        <div class="pick-back" id="who-back" hidden></div>
+        <div class="pick-pop" id="who-pop" hidden>
+          <div class="pick-head"><b>Pick your name</b><button class="pick-x" id="who-x" type="button" aria-label="Close">Close</button></div>
+          <ul class="pick-list" id="who-list" role="listbox" tabindex="-1" aria-label="Pick your name"></ul>
+        </div>
       </div>
       <p class="howto">Pick your name once. Your duties show up here, and this page remembers you on this phone.</p>
       <div class="next" id="next" hidden></div>
