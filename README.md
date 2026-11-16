@@ -1,6 +1,6 @@
 # Armed and Dangerous'27 Content Plan
 
-The content plan for Armed and Dangerous'27 (Video, Social media, Writers). Jul 17–20, 2027, Kaduna.
+The content plan for Armed and Dangerous'27 (Video, Social media, Writers). Jul 15–18, 2027, Kaduna.
 
 A static site with no build step.
 

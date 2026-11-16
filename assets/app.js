@@ -5,9 +5,9 @@
   const ROLE_SHORT = { 'Inside shooting': 'Shooting', 'Inside editing': 'Editing', 'CD / comms': 'CD / comms' };
   const rs = r => ROLE_SHORT[r] || r;
   const TEAM_ORDER = ['Video', 'Social media', 'Writers'];
-  const START = { 'sat-eve': '2027-07-17T16:00:00+01:00', 'sun-morn': '2027-07-18T08:30:00+01:00', 'sun-eve': '2027-07-18T16:00:00+01:00', 'mon-morn': '2027-07-19T08:30:00+01:00', 'mon-eve': '2027-07-19T16:00:00+01:00', 'tue-morn': '2027-07-20T08:30:00+01:00' };
-  const DAYEND = { 'Saturday': '2027-07-17T23:00:00+01:00', 'Sunday': '2027-07-18T23:00:00+01:00', 'Monday': '2027-07-19T23:00:00+01:00', 'Tuesday': '2027-07-20T16:00:00+01:00' };
-  const sessEnd = id => new Date(new Date(START[id]).getTime() + (id === 'tue-morn' ? 5 : 4.5) * 3600e3);
+  const START = { 'thu-eve': '2027-07-15T16:00:00+01:00', 'fri-morn': '2027-07-16T08:30:00+01:00', 'fri-eve': '2027-07-16T16:00:00+01:00', 'sat-morn': '2027-07-17T08:30:00+01:00', 'sat-eve': '2027-07-17T16:00:00+01:00', 'sun-morn': '2027-07-18T08:30:00+01:00' };
+  const DAYEND = { 'Thursday': '2027-07-15T23:00:00+01:00', 'Friday': '2027-07-16T23:00:00+01:00', 'Saturday': '2027-07-17T23:00:00+01:00', 'Sunday': '2027-07-18T16:00:00+01:00' };
+  const sessEnd = id => new Date(new Date(START[id]).getTime() + (id === 'sun-morn' ? 5 : 4.5) * 3600e3);
   const split = p => p.split(',').map(x => x.trim()).filter(Boolean);
   const pad = n => String(n).padStart(2, '0');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -159,7 +159,7 @@
   });
 
   // Marquee: the page's own words, repeated.
-  const words = ['Armed and Dangerous\'27', 'Pneumatikus: Distributions of the Spirit', 'Lighthouse Church', 'Video', 'Social media', 'Writers', 'Jul 17–20, 2027', 'Kaduna'];
+  const words = ['Armed and Dangerous\'27', 'Pneumatikus: Distributions of the Spirit', 'Lighthouse Church', 'Video', 'Social media', 'Writers', 'Jul 15–18, 2027', 'Kaduna'];
   const run = words.map(w => `<span>${w}</span><i></i>`).join('');
   $('marquee').innerHTML = `<div>${run}</div><div>${run}</div>`;
 
